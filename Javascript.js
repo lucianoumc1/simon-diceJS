@@ -6,4 +6,5 @@ const BTN_EMPEZAR = document.getElementById('btn_empezar');
 
 function empezarJuego(){
     var juego = new Juego();
+    console.log(juego)
 }
