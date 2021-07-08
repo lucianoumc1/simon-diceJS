@@ -47,6 +47,7 @@ class Juego {
 
     parpadearColor(color){
         color.classList.add('light')
+        color.sounds.play();
         setTimeout(() => color.classList.remove('light'), 350)
     }
 
