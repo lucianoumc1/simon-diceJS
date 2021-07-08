@@ -1,0 +1,4 @@
+Al inciar una nueva partida el array de colores matiene los colores de la partida anterior.
+
+si se pierde, continuar la ejecucion de iluminacion de colore.
+

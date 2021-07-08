@@ -11,7 +11,7 @@ class Juego {
         btnEmpezar.classList.toggle('hide')
         this.nivel = 1
         this.dificultad = 1000
-        this.nivelMaximo = 3
+        this.nivelMaximo = 11
     }
     
     generarSecuencia(){
@@ -42,6 +42,7 @@ class Juego {
         for (let i = 0; i < this.nivel; i++){
             setTimeout(() => this.parpadearColor(this.secuenciaDeColores[i]),this.dificultad * i)
         }
+        
     }
 
     parpadearColor(color){
