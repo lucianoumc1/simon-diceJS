@@ -11,5 +11,4 @@ VERDE.sounds = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3'
 
 function empezarJuego(){
     var juego = new Juego();
-    console.log(juego)
 }
