@@ -6,12 +6,12 @@ class Juego {
         this.generarSecuencia()
         setTimeout(this.siguienteNivel, 800)
     }
-
+    
     inicializar(){
         btnEmpezar.classList.toggle('hide')
         this.nivel = 1
-        this.dificultad = 1000
-        this.nivelMaximo = 11
+        this.dificultad = 600
+        this.nivelMaximo = 10
     }
     
     generarSecuencia(){
@@ -33,25 +33,28 @@ class Juego {
     }
     
     siguienteNivel(){
+             debugger
             this.subnivel = 0
             this.iluminarSecuencia()
-            this.agregarEventoClick()
+            setTimeout(() => this.agregarEventoClick(), 100)
     }
     
     iluminarSecuencia(){
+        debugger
         for (let i = 0; i < this.nivel; i++){
             setTimeout(() => this.parpadearColor(this.secuenciaDeColores[i]),this.dificultad * i)
         }
-        
     }
 
     parpadearColor(color){
+        debugger
         color.classList.add('light')
         color.sounds.play();
-        setTimeout(() => color.classList.remove('light'), 350)
+        setTimeout(() => color.classList.remove('light'), 200)
     }
 
     agregarEventoClick(){
+        debugger
         CELESTE.addEventListener('click', this.colorElegido);
         VIOLETA.addEventListener('click', this.colorElegido);
         NARANJA.addEventListener('click', this.colorElegido);
@@ -65,26 +68,28 @@ class Juego {
     }
 
     colorElegido(ev){
-
         let colorElegido = ev.toElement;
         let colorCorrecto = this.secuenciaDeColores[this.subnivel];
-
         this.parpadearColor(colorElegido);
 
         if(colorElegido === colorCorrecto){
             this.subnivel++ ;
-            console.log('correcto');
+
             if(this.subnivel === this.nivel){
-                this.nivel++;
+                this.eliminarEventoClick();
+
                 if(this.nivel === this.nivelMaximo){
                     this.mensajeDeVictoria();
                     this.inicializar();
+
                 }else{
-                setTimeout(this.siguienteNivel, 1500)
+                    this.nivel++;
+                    setTimeout(this.siguienteNivel, 1500)
                 }
             }
         }else{
-            this.mensajeDeError()
+            this.eliminarEventoClick();
+            this.mensajeDeError();
             this.inicializar();
         }
     }
