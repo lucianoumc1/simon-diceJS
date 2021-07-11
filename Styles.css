@@ -1,12 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    background: #dedede;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
+  background-image: url('./images/wall.jpg');
+  align-items: center;
+  height: 100vh;
+  font-size: 62.5%;
+}
 
-  .gameboard {
+.tittle {
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 5rem;
+  font-family: sans-serif;
+}
+
+.container-game {
+  display:flex;
+}
+.gameboard {
+  position:relative;
+    border: 8px solid black;
     height: 100vh;
     width: 100vh;
     border-radius: 50%;
@@ -27,50 +43,56 @@ body {
   }
 
   .right {
-    float: left;
+    float: right;
   }
 
   .celeste {
-    background: #22a6b3;
+    background-image: linear-gradient(to right, #1f41ff 0%, #1f79ff  51%, #1f41ff  100%);
   }
-
-  .celeste.light {
-    background: #7ed6df;
-  }
-
+  
   .violeta {
-    background: #be2edd;
-  }
-
-  .violeta.light {
-    background: #e056fd;
+    background-image: linear-gradient(to right, #ff1f1f 0%, #fa7a12  51%, #ff1f1f  100%);
   }
 
   .naranja {
-    background: #f0932b;
-  }
-
-  .naranja.light {
-    background: #ffbe76;
+    background-image: linear-gradient(to right, #fffb1f 0%, #f3f170  51%, #fffb1f  100%);
+    
   }
 
   .verde {
-    background: #6ab04c;
+      background-image: linear-gradient(to right, #1fff3d 0%, #1fff6a  51%, #1fff3d  100%)
   }
 
-  .verde.light {
-    background: #badc58;
+  .light {
+    filter: brightness(200%);
   }
 
   .btn-start {
-    width: 400px;
-    height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    font-size: 2.5rem;
+    width: 12rem;
+    border: 8px solid black;
+    height: 12rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    background: rgb(233, 232, 231);
+    color: #265585;
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
+    top: calc(50% - 6rem);
+    left: calc(50% - 6rem);
+  }
+  .btn-center {
+    border: 8px solid black;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    background-image: url(./images/wall.jpg);
+    position: absolute;
+    top: calc(50% - 6rem);
+    left: calc(50% - 6rem);
+  }
+
+  .border {
+    border: 8px solid black;
   }
 
   .hide {
