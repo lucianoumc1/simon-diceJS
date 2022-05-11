@@ -20,4 +20,4 @@ https://lucianoumc1.github.io/simon-diceJS/
 - [ ] Aumento de dificultad
 
 ## Errores !
-El sonido se reproduce solo vez, al ejecutarse 2 veces seguidas el mismo boton.
+El sonido se reproduce solo 1 vez, al ejecutarse 2 veces seguidas el mismo boton.
