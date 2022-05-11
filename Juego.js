@@ -9,7 +9,7 @@ class Juego {
 
   inicializar() {
     btnEmpezar.classList.toggle("hide");
-    this.nivel = 6;
+    this.nivel = 1;
     this.dificultad = 600;
     this.nivelMaximo = 10;
   }
