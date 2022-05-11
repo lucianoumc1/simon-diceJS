@@ -3,12 +3,12 @@
 
 ## Sobre el proyecto
 
- El proyecto es una practica personal, para entender mejor el funcionamiento del event loop, asi tambien como el comportamiento asincrono.
+ El proyecto es una practica personal, para entender mejor el funcionamiento del event loop, asi como tambien el comportamiento asincrono.
  
 ## Link para jugar
 https://lucianoumc1.github.io/simon-diceJS/
 
-#### Built With
+#### Tecnologias
 + HTML
 + CSS 
 + JavaScript
