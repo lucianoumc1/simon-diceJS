@@ -1,3 +1,0 @@
-si se pierde, continuar la ejecucion de iluminacion de colores.
-
-los botones se pueden clickear mientras se ilumina la secuencia.

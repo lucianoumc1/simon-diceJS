@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Simon Dice</title>
-    <link rel="stylesheet" href="./Styles.css">
+    <link rel="stylesheet" href="./Styles.css" />
   </head>
   <body>
     <h1 class="tittle">Simon dice</h1>
     <div class="container-game">
       <div class="gameboard">
-        <div id="celeste" class="color celeste left border" data-color="celeste"></div>
-        <div id="violeta" class="color violeta right border" data-color="violeta"></div>
-        <div id="naranja" class="color naranja left border" data-color="naranja"></div>
-        <div id="verde" class="color verde right border" data-color="verde"></div>
-        <button id="center" class="btn-center" ></button>
-        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Start</button>
+        <div
+          id="celeste"
+          class="color celeste left border"
+          data-color="celeste"
+        ></div>
+        <div
+          id="violeta"
+          class="color violeta right border"
+          data-color="violeta"
+        ></div>
+        <div
+          id="naranja"
+          class="color naranja left border"
+          data-color="naranja"
+        ></div>
+        <div
+          id="verde"
+          class="color verde right border"
+          data-color="verde"
+        ></div>
+        <button id="center" class="btn-center"></button>
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">
+          Start
+        </button>
       </div>
     </div>
-      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-      <script src="./Juego.js"></script>
-      <script src="./Javascript.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./Juego.js"></script>
+    <script src="./Javascript.js"></script>
   </body>
 </html>
